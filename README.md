@@ -1,1 +1,1 @@
-🌐 [Visit The Site](https://netflixclonebyrana.netlify.app)
+🌐 [Visit The Site](https://netcloneflixrana.netlify.app/)
