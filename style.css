@@ -22,6 +22,7 @@ html{
     font-size: 62.5%;  /* 1rem = 10px*/
 }
 
+
 body{
     background-color: var(--mainBackgroung);
     color: var(--text);
@@ -40,7 +41,7 @@ a{
 
 .main{
     width: 100%;
-    height: 100vh;
+    height: 95vh;           
     background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 90%), url("Assets/Images/main-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -122,7 +123,10 @@ select{
     }
 }
 
+
 .main-content{
+    width: 100%;
+    padding: 0 6rem;
     position: absolute;
     margin-top: 5rem;
     top: 50%;
@@ -134,20 +138,23 @@ select{
     justify-content: center;
     gap: 2rem;
     & h1{
+        word-wrap: wrap;
         font-size: 4.8rem;
-        text-wrap: nowrap;
         font-weight: 1000;
+        text-align: center;
     }
 
     & .sub-heading{
         font-size: 3rem;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
     }
 
     & .info{
         margin-top: 2rem;
         font-size: 2rem;
         font-weight: 400;
+        text-align: center;
     }
 }
 
@@ -224,7 +231,7 @@ section{
     width: 68%;
     height: auto;
     position: absolute;
-    top: 8rem;
+    top: 7.8rem;
     right: 6rem;
 }
 
@@ -336,4 +343,347 @@ footer div{
 
 .footer select{
     margin: 2.3rem 0;
+}
+
+@media (max-width: 1390px){
+    html{
+        font-size: 56.2%;  /* 1rem = 9px*/
+    }
+}
+
+@media (max-width: 1200px){
+    html{
+        font-size: 50%;  /* 1rem = 8px*/
+    }
+}
+
+@media (max-width: 1200px){
+    .section-3 .show video {
+        width: 58%;
+        z-index: -1;
+        top: 3.5rem;
+        right: 8rem;
+    }
+}
+
+
+
+@media (max-width: 1024px){
+    html{
+        font-size: 45.7%;  /* 1rem = 7.5px*/
+    }
+
+    .footer,
+    section,
+    .container{
+        padding: 3rem 6rem;
+    }
+
+    .section-3 .show video {
+        width: 58%;
+        z-index: -1;
+        top: 4.5rem;
+        right: 10rem;
+    }
+    .show video {
+        width: 68%;
+        height: auto;
+        position: absolute;
+        top: 8.8rem;
+        right: 7rem;
+    }    
+}
+
+@media (max-width: 990px){
+    html{
+        font-size: 45%;  /* 1rem = 7.5px*/
+    }
+
+    .section-3 .show video {
+        width: 58%;
+        z-index: -1;
+        top: 4.5rem;
+        right: 10rem;
+    }
+}
+
+@media (max-width: 920px){
+    html{
+        font-size: 45%;  /* 1rem = 7.5px*/
+    }
+
+    .section-3 .show video{
+        right: 10rem;
+    }
+
+    .section-1 .show video{
+        top: 8rem;
+        right: 6rem;
+    }
+}
+
+@media (max-width: 870px) {
+    html{
+        font-size: 40%;  /* 1rem = 7px*/
+    }
+    nav img{
+        width: 12rem;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 800px){
+    html{
+        font-size: 42.5%;  /* 1rem = 7px*/
+    }
+    .container{
+        padding: 3rem 6rem;
+    }
+
+    .grid-2-cols{
+        grid-template-columns: repeat(auto-fill, minmax(70rem, 1fr));
+        gap:4rem
+    }
+
+    .show-info{
+        text-align: center;
+    }
+
+    .section-1 .show video{
+        top: 14rem;
+        right: 16rem;
+    }
+
+    .section-3 .show video{
+        top: 8rem;
+        right: 22rem;
+    }
+
+    .section-2 .show{
+        order: 2;
+    }
+
+    .section-4 .show{
+        order: 2;
+    }
+
+    .section-3 .show .secImg,
+    .section-2 .show .secImg,
+    .section-1 .show .secImg{
+        display: flex;
+        justify-content:center;
+    } 
+
+    nav img{
+        width: 12rem;
+        height: auto;
+    }
+
+    .FAQ-footer p{
+        text-align: center;
+        margin-bottom: 2.4rem;
+    }
+}
+
+/* till 800px done, now cheack for distructions and solve it till small devices */
+@media (max-width:720px) {
+    .section-1 .show video{
+        top: 12rem;
+        right: 14rem;
+    }
+
+    .section-3 .show video{
+        top: 8rem;
+        right: 19rem;
+    }
+}
+@media (max-width:640px) {
+    .section-1 .show video{
+        top: 11rem;
+        right: 12rem;
+    }
+
+    .section-3 .show video{
+        top: 6rem;
+        right: 17rem;
+    }
+}
+
+@media (max-width:600px) {
+    .section-1 .show video{
+        top: 10rem;
+        right: 11.5rem;
+    }
+
+    .section-3 .show video{
+        top: 6rem;
+        right: 16rem;
+    }
+
+    .grid-4-cols{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer a, 
+    footer p{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:550px) {
+    .grid-2-cols{
+        grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+        gap:4rem
+    }
+
+    .section-1 .show video{
+        top: 9rem;
+        right: 10.5rem;
+    }
+
+    .section-3 .show video{
+        top: 5rem;
+        right: 14rem;
+    }
+
+    /* sign in form full width */
+    .email-sign-up{
+        flex-direction: column;
+    }
+
+    .FAQ-footer,
+    .main-content {
+        & .email-sign-up{
+            width: 100%;
+        }    
+    }
+    .FAQ-footer,
+    .main-content {
+        & .btn{
+            padding: 1.8rem 3rem;
+            width: 50%;
+        }
+    }
+    .FAQ-footer,
+    .email-sign-up {
+        & div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .FAQ-footer,
+    .main-content {
+        & .email-sign-up{
+            & input{
+                padding: 2.3rem 20rem 2.3rem 2rem;
+            }
+        }
+    }
+
+}
+@media (max-width:490px) {
+    .main{
+        height: 72vh;
+    }
+    nav img{
+        width: 16rem;
+    }
+    select{
+        padding: 1.5rem 3.5rem;
+    }
+    .btn{
+        padding: 1.5rem 2rem;
+    }
+    .section-1 .show video{
+        top: 8rem;
+        right: 9.5rem;
+    }
+
+    .section-3 .show video{
+        top: 5rem;
+        right: 12rem;
+    }
+
+}
+@media (max-width:440px) {
+    html{
+        font-size: 39%;
+    }
+    .section-1 .show video{
+        top: 7rem;
+        right: 8.5rem;
+    }
+
+    .section-3 .show video{
+        top: 4rem;
+        right: 11rem;
+    }
+}
+@media (max-width:400px) {
+    html{
+        font-size: 35%;
+    }
+    .section-1 .show video{
+        top: 8rem;
+        right: 9.5rem;
+    }
+
+    .section-3 .show video{
+        top: 5rem;
+        right: 13rem;
+    }
+}
+@media (max-width:370px) {
+    .section-1 .show video{
+        top: 6.8em;
+        right: 8.5rem;
+    }
+
+    .section-3 .show video{
+        top: 4rem;
+        right: 11rem;
+    }
+}
+@media (max-width:330px) {
+    .section-1 .show video{
+        top: 5.8em;
+        right: 7.5rem;
+    }
+
+    .section-3 .show video{
+        top: 4rem;
+        right: 10rem;
+    }
+}
+
+@media (max-width:300px) {
+    .main{
+        height: 100vh;
+    }
+    .section-1 .show video{
+        top: 5.8em;
+        right: 6.5rem;
+    }
+
+    .section-3 .show video{
+        top: 3rem;
+        right: 9rem;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    nav img{
+        width: 14rem;
+    }
+
+    .main-content h1{
+        padding-top: 5rem;
+    }
 }
